@@ -35,7 +35,7 @@ ChromePass is a lightweight Chrome extension that allows users to generate secur
 
 ## License
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+This project is licensed under the MIT License.
 
 ## Contributing
 
