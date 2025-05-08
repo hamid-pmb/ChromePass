@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <style>
+        body {
+            width: 300px; /* Set a fixed width for the popup */
+            height: 400px; /* Set a fixed height for the popup */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            overflow: hidden; /* Prevent scrollbars */
+        }
+
+        h1 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        #password {
+            width: 90%; /* Adjust width to fit smaller popup */
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+            text-align: center;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        #generate {
+            width: 90%; /* Adjust button width */
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #3c42f2; /* Blue color */
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            margin-top: 10px;
+        }
+
+        #generate:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+
+        #generate:active {
+            background-color: #003f7f; /* Even darker blue on active */
+        }
+
+        #copy {
+            width: 90%; /* Adjust button width */
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #47a41b; /* Green color */
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            margin-top: 10px;
+        }
+
+        #copy:hover {
+            background-color: #2e7d32; /* Darker green on hover */
+        }
+
+        #copy:active {
+            background-color: #1b5e20; /* Even darker green on active */
+        }
+    </style>
+</head>
+<body>
+    <h1>Password Generator</h1>
+    <input type="text" id="password" readonly placeholder="Your password will appear here">
+    <button id="generate">Generate Password</button>
+    <button id="copy">Copy to Clipboard</button>
+    <p id="copyMessage" style="display: none; color: green; font-size: 14px; margin-top: 10px;"></p>
+    <script src="popup.js"></script>
+</body>
+</html>
